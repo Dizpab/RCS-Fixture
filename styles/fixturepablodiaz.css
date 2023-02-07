@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-5 {
+  background: transparent;
+  margin: 10px;
+}
+
+.animated-shadow {
+  color: #ffffff;
+  font: normal 80px Varela Round, sans-serif;
+  height: 80px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2;
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641,
+      1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
+  }
+  25% {
+    text-shadow: -4px -4px 0 #13f1fc, -3px -3px 0 #13f1fc, -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc, 4px 4px 0 #da0641, 3px 3px 0 #da0641,
+      2px 2px 0 #da0641, 1px 1px 0 #da0641;
+  }
+  50% {
+    text-shadow: -4px 4px 0 #da0641, -3px 3px 0 #da0641, -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641, 4px -4px 0 #13f1fc, 3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc, 1px -1px 0 #13f1fc;
+  }
+  75% {
+    text-shadow: 4px 4px 0 #13f1fc, 3px 3px 0 #13f1fc, 2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc, -4px -4px 0 #da0641, -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641, -1px -1px 0 #da0641;
+  }
+  100% {
+    text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641,
+      1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc;
+  }
+}
+
+.navfixture {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  margin: 30px;
+}
+
+.navfixture ul {
+  font-size: medium;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  list-style-type: none;
+  margin: 3px;
+  padding: 3px;
+  background-color: black;
+  display: flex;
+  justify-content: right;
+}
+
+.navfixture img {
+  width: 108px;
+  height: 108px;
+  object-fit: contain;
+}
+
+.navfixture li a {
+  padding: 10px;
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(182, 21, 31);
+  text-decoration: none;
+}
+
+.navfixture li a:hover {
+  background-color: brown;
+  cursor: alias;
+}
+
+.navfixture li a {
+  color: antiquewhite;
+}
+
+body {
+  background-image: url(../assets/images/bence-balla-schottner-deGn9vSwXIM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position: no-repeat;
+  background-attachment: fixed;
+  object-fit: contain;
+}
+
+.group img {
+  width: 50px;
+  border-radius: 2px;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.group p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(10, 10, 10);
+  display: inline-block;
+}
+
+.group h2 {
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.country img {
+  border-color: black;
+  border-radius: 10px;
+  vertical-align: bottom;
+  margin-top: 10px;
+}
+
+.country p {
+  border-style: 2px;
+  background-color: #f1dde5;
+  width: 120px;
+  height: 33px;
+  border-radius: 0px 0px 15px 0px;
+  border: 2px solid #991239;
+  text-align: justify;
+  padding: 3px;
+}
+
+.name {
+  color: #f1dde5;
+  background-color: #991239;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
